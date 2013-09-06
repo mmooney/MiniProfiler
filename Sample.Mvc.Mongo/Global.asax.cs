@@ -14,7 +14,7 @@ using System.Data.SqlServerCe;
 using SampleWeb.EFCodeFirst;
 using System.Data.Entity.Infrastructure;
 using System.Data.Entity;
-using StackExchange.Profiling.MVCHelpers;
+//using StackExchange.Profiling.MVCHelpers;
 using SampleWeb.SampleService;
 using SampleWeb.Helpers;
 
@@ -63,16 +63,16 @@ namespace SampleWeb
                 File.Delete(efDb);
             }
 
-            //Setup profiler for Controllers via a Global ActionFilter
-            GlobalFilters.Filters.Add(new ProfilingActionFilter());
+			////Setup profiler for Controllers via a Global ActionFilter
+			//GlobalFilters.Filters.Add(new ProfilingActionFilter());
 
-            // initialize automatic view profiling
-            var copy = ViewEngines.Engines.ToList();
-            ViewEngines.Engines.Clear();
-            foreach (var item in copy)
-            {
-                ViewEngines.Engines.Add(new ProfilingViewEngine(item));
-            }
+			//// initialize automatic view profiling
+			//var copy = ViewEngines.Engines.ToList();
+			//ViewEngines.Engines.Clear();
+			//foreach (var item in copy)
+			//{
+			//	ViewEngines.Engines.Add(new ProfilingViewEngine(item));
+			//}
 
             MiniProfilerEF.Initialize(false);
         }

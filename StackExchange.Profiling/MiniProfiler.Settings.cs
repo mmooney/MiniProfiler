@@ -57,7 +57,7 @@ namespace StackExchange.Profiling
 
                     if (System.IO.Directory.Exists(customUITemplatesPath))
                     {
-                        files.AddRange(System.IO.Directory.EnumerateFiles(customUITemplatesPath));
+                        files.AddRange(System.IO.DirectoryHelper.EnumerateFiles(customUITemplatesPath));
                     }
 
                     using (var sha256 = new System.Security.Cryptography.SHA256CryptoServiceProvider())

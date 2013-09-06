@@ -30,7 +30,7 @@
         /// <summary>
         /// load the SQL batch.
         /// </summary>
-        private static readonly string LoadSqlBatch = string.Join("\n", LoadSqlStatements.Select(pair => pair.Value));
+        private static readonly string LoadSqlBatch = string.Join("\n", LoadSqlStatements.Select(pair => pair.Value).ToArray());
 
         /// <summary>
         /// Initialises a new instance of the <see cref="SqlServerStorage"/> class. 
@@ -234,6 +234,7 @@ where not exists (select 1 from MiniProfilers where Id = @Id)"; // this syntax w
             }
         }
 
+
         /// <summary>
         /// save the client timing.
         /// </summary>
@@ -426,7 +427,7 @@ where not exists (select 1 from MiniProfilers where Id = @Id)"; // this syntax w
             }
         }
         
-        /// <summary>
+		/// <summary>
         /// load the profiler in a batch.
         /// </summary>
         /// <param name="connection">The connection.</param>

@@ -135,7 +135,7 @@
             {
                 path = VirtualPathUtility.ToAbsolute(MiniProfiler.Settings.RouteBasePath).EnsureTrailingSlash(),
                 version = MiniProfiler.Settings.Version,
-                ids = string.Join(",", ids.Select(guid => guid.ToString())),
+                ids = string.Join(",", ids.Select(guid => guid.ToString()).ToArray()),
                 position = (position ?? MiniProfiler.Settings.PopupRenderPosition).ToString().ToLower(),
                 showTrivial = (showTrivial ?? MiniProfiler.Settings.PopupShowTrivial).ToJs(),
                 showChildren = (showTimeWithChildren ?? MiniProfiler.Settings.PopupShowTimeWithChildren).ToJs(),
@@ -168,7 +168,7 @@
 
             if (!lastId.IsNullOrWhiteSpace())
             {
-                Guid.TryParse(lastId, out lastGuid);
+                GuidHelper.TryParse(lastId, out lastGuid);
             }
 
             // After app restart, MiniProfiler.Settings.Storage will be null if no results saved, and NullReferenceException is thrown.
@@ -292,13 +292,17 @@
         {
             // when we're rendering as a button/popup in the corner, we'll pass ?popup=1
             // if it's absent, we're rendering results as a full page for sharing
+			#if !CSHARP30
             var isPopup = !string.IsNullOrWhiteSpace(context.Request["popup"]);
+			#else
+            var isPopup = !string.IsNullOrEmpty(context.Request["popup"]);
+			#endif
 
             // this guid is the MiniProfiler.Id property
             // if this guid is not supplied, the last set of results needs to be
             // displayed. The home page doesn't have profiling otherwise.
             Guid id;
-            if (!Guid.TryParse(context.Request["id"], out id))
+            if (!GuidHelper.TryParse(context.Request["id"], out id))
                 id = MiniProfiler.Settings.Storage.List(1).FirstOrDefault();
 
             if (id == default(Guid))

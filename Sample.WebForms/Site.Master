@@ -30,7 +30,7 @@
                 </asp:LoginView>
             </div>
             <div class="clear hideSkiplink">
-            <% using (StackExchange.Profiling.MiniProfiler.StepStatic("Navigation rendering")) 
+            <% using (StackExchange.Profiling.MiniProfiler.StepStatic("Navigation rendering", StackExchange.Profiling.ProfileLevel.Info)) 
                { 
                    System.Threading.Thread.Sleep(20); 
             %>
@@ -54,6 +54,6 @@
     </div>
     </form>
     
-        <%= StackExchange.Profiling.MiniProfiler.RenderIncludes(useExistingjQuery:false) %>
+        <%= StackExchange.Profiling.MiniProfiler.RenderIncludes(null,null,null,null,null,false,false,null) %>
 </body>
 </html>

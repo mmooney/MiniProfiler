@@ -91,7 +91,7 @@ namespace StackExchange.Profiling.SqlFormatters
 
                 DbType parsed;
                 string resolvedType = null;
-                if (!Enum.TryParse(p.DbType, out parsed))
+                if (!EnumHelper.TryParse(p.DbType, out parsed))
                 {
                     resolvedType = p.DbType;
                 }

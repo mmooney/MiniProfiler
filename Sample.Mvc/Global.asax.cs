@@ -11,7 +11,7 @@ namespace SampleWeb
     using SampleWeb.Helpers;
 
     using StackExchange.Profiling;
-    using StackExchange.Profiling.MVCHelpers;
+	//using StackExchange.Profiling.MVCHelpers;
 
     /// <summary>
     /// The MVC application.
@@ -24,20 +24,6 @@ namespace SampleWeb
         public static string ConnectionString
         {
             get { return "Data Source = " + HttpContext.Current.Server.MapPath("~/App_Data/TestMiniProfiler.sqlite"); }
-        }
-
-        /// <summary>
-        /// register the routes.
-        /// </summary>
-        /// <param name="routes">The routes.</param>
-        public static void RegisterRoutes(RouteCollection routes)
-        {
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.MapRoute(
-                "Default", // Route name
-                "{controller}/{action}/{id}", // URL with parameters
-                new { controller = "Home", action = "Index", id = UrlParameter.Optional });
         }
 
         /// <summary>

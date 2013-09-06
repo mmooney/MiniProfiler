@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using StackExchange.Profiling;
@@ -10,14 +11,23 @@ namespace Sample.WebForms
 {
     public class Global : System.Web.HttpApplication
     {
+		/// <summary>
+		/// Gets the connection string.
+		/// </summary>
+		public static string ConnectionString
+		{
+			get { return "Data Source = " + HttpContext.Current.Server.MapPath("~/App_Data/TestMiniProfiler.sqlite"); }
+		}
 
         void Application_Start(object sender, EventArgs e)
         {
-            InitProfilerSettings();
+	
+			InitProfilerSettings();
 
             // this is only done for testing purposes so we don't check in the db to source control
             ((SampleWeb.Helpers.SqliteMiniProfilerStorage)MiniProfiler.Settings.Storage).RecreateDatabase();
         }
+
 
         protected void Application_BeginRequest()
         {
@@ -55,7 +65,7 @@ namespace Sample.WebForms
             ignored.Add("/Styles/");
             MiniProfiler.Settings.IgnoredPaths = ignored.ToArray();
 
-            MiniProfiler.Settings.Storage = new SampleWeb.Helpers.SqliteMiniProfilerStorage(SampleWeb.MvcApplication.ConnectionString);
+            MiniProfiler.Settings.Storage = new SampleWeb.Helpers.SqliteMiniProfilerStorage(Global.ConnectionString);
             MiniProfiler.Settings.SqlFormatter = new StackExchange.Profiling.SqlFormatters.InlineFormatter();
         }
     }

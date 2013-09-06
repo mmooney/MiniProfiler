@@ -17,7 +17,11 @@
         /// <returns>true if the string is null or white space</returns>
         internal static bool IsNullOrWhiteSpace(this string value)
         {
+			#if !CSHARP30
             return string.IsNullOrWhiteSpace(value);
+			#else
+            return string.IsNullOrEmpty(value);
+			#endif
         }
 
         /// <summary>
@@ -27,7 +31,11 @@
         /// <returns>The <see cref="bool"/>.</returns>
         internal static bool HasValue(this string value)
         {
+			#if !CSHARP30
             return !string.IsNullOrWhiteSpace(value);
+			#else
+			return !string.IsNullOrEmpty(value);
+			#endif
         }
 
         /// <summary>

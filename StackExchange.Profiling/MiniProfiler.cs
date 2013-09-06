@@ -306,7 +306,11 @@
         /// <returns>the mini profiler</returns>
         public static MiniProfiler FromJson(string json)
         {
+			#if !CSHARP30
             if (string.IsNullOrWhiteSpace(json)) return null;
+			#else
+			if (string.IsNullOrEmpty(json)) return null;
+			#endif
 
             var result = new JavaScriptSerializer { MaxJsonLength = Settings.MaxJsonResponseSize }.Deserialize<MiniProfiler>(json);
             return result;

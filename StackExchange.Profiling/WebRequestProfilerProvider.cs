@@ -126,9 +126,13 @@
         private static void EnsureName(MiniProfiler profiler, HttpRequest request)
         {
             // also set the profiler name to Controller/Action or /url
+#if !CSHARP30
             if (string.IsNullOrWhiteSpace(profiler.Name))
+#else
+            if (string.IsNullOrEmpty(profiler.Name))
+#endif
             {
-                var rc = request.RequestContext;
+                var rc = request.GetRequestContext();
                 RouteValueDictionary values;
 
                 if (rc != null && rc.RouteData != null && (values = rc.RouteData.Values).Count > 0)
@@ -140,7 +144,11 @@
                         profiler.Name = controller.ToString() + "/" + action.ToString();
                 }
 
+#if !CSHARP30
                 if (string.IsNullOrWhiteSpace(profiler.Name))
+#else
+                if (string.IsNullOrEmpty(profiler.Name))
+#endif
                 {
                     profiler.Name = request.Url.AbsolutePath ?? string.Empty;
                     if (profiler.Name.Length > 50)

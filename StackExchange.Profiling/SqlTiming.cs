@@ -321,7 +321,11 @@ namespace StackExchange.Profiling
 
             foreach (DbParameter parameter in command.Parameters)
             {
+				#if !CSHARP30
                 if (!string.IsNullOrWhiteSpace(parameter.ParameterName))
+				#else
+				if (!string.IsNullOrEmpty(parameter.ParameterName))
+				#endif
                 {
                     result.Add(new SqlTimingParameter
                     {
