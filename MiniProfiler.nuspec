@@ -1,17 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>MiniProfiler</id>
-    <version>2.1.0</version>
-    <authors>Marc Gravell, Sam Saffron, Jarrod Dixon</authors>
-    <owners>Marc Gravell, Sam Saffron, Jarrod Dixon</owners>
-    <description>Lightweight mini-profiler, in particular designed for ASP.NET MVC sites</description>
-    <projectUrl>http://miniprofiler.com</projectUrl>
+    <id>MiniProfilerDotNet35</id>
+    <version>0.35.2</version>
+	<title>MiniProfiler - .NET 3.5 Build</title>
+    <authors>Original: Marc Gravell, Sam Saffron, Jarrod Dixon; 3.5 Fork: Mike Mooney</authors>
+	<summary></summary>
+    <owners>Mike Mooney</owners>
+    <description>Lightweight mini-profiler, in particular designed for ASP.NET MVC sites (then ported to support .NET 3.5 Webforms sites)</description>
+    <projectUrl>https://github.com/mmooney/MiniProfiler/tree/DotNet35</projectUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <tags>profiler sql mvc asp.net performance profiling timing</tags>
+    <tags>profiler sql asp.net performance profiling timing .net35 miniprofiler</tags>
     <language>en-US</language>
-  </metadata>
-  <files>
-    <file src="StackExchange.Profiling\bin\Release\MiniProfiler.*" target="lib\net40" />
-  </files>
+		<dependencies>
+			<dependency id="TaskParallelLibrary" version="1.0.2856.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="StackExchange.Profiling\bin\Release\MiniProfiler.*" target="lib\net35" />
+	</files>
 </package>

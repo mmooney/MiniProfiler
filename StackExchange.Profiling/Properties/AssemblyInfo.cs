@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("StackExchange.Profiling")]
 [assembly: AssemblyDescription("A simple but effective mini-profiler for ASP.NET MVC - http://miniprofiler.com")]
-[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyConfiguration(".NET 3.5 Build")]
 [assembly: AssemblyCompany("Stack Exchange")]
 [assembly: AssemblyProduct("StackExchange.Profiling")]
 [assembly: AssemblyTrademark("")]
