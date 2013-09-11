@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>MiniProfilerDotNet35</id>
-    <version>0.35.2</version>
+    <version>0.35.3</version>
 	<title>MiniProfiler - .NET 3.5 Build</title>
     <authors>Original: Marc Gravell, Sam Saffron, Jarrod Dixon; 3.5 Fork: Mike Mooney</authors>
 	<summary></summary>

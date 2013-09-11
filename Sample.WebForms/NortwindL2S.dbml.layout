@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.5, 20.375" name="NortwindL2S">
+  <DataContextMoniker Name="/NortwindL2SDataContext" />
+  <nestedChildShapes>
+    <classShape Id="965409c1-da9d-4b66-b167-1d9e4deedf7d" absoluteBounds="3.75, 14.625, 2, 1.5785953776041684">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d457308e-a7df-41aa-a8b0-522862f106b2" absoluteBounds="3.765, 15.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80d7e859-46c8-40b4-a8cc-0aafd29eec96" absoluteBounds="9.5, 7.375, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Territory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76c9923a-ae4d-470c-91ce-8c33816bb149" absoluteBounds="9.515, 7.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be5ef110-04b2-4ebe-a685-a7ffdf66dd40" absoluteBounds="3.5, 3.75, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/NortwindL2SDataContext/CustomerCustomerDemo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a4e5f7b1-0ba5-4c93-9ea7-9c67fb7c0e47" absoluteBounds="3.515, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3bc732e-1de4-44f1-8606-93da152f35e6" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/NortwindL2SDataContext/CustomerDemographic" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f61dfd61-588e-4556-9740-6a54d004e9f5" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="360fb056-4c87-451c-aeac-230d47bc8f34" absoluteBounds="0.75, 2.875, 2, 2.9247054036458322">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b557aa59-028e-4776-8a5e-96aa89c4e9b2" absoluteBounds="0.765, 3.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3801098a-63f6-41cc-9cae-3f94242a3924" absoluteBounds="3.75, 8.625, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a605f9fb-9094-405c-b90d-35941047ef51" absoluteBounds="3.765, 9.085, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9473faf5-031c-4100-b143-b2a0ec47962c" absoluteBounds="12.25, 9.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NortwindL2SDataContext/EmployeeTerritory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31be43d1-fc8e-4ad2-9148-05cc5cc0ca85" absoluteBounds="12.265, 9.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7d3d36e-8efa-47aa-a745-3d4186b2aabd" absoluteBounds="9.25, 3.5, 2, 1.7708968098958322">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Order_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e8503138-3a94-4165-8e9e-d307db8734e0" absoluteBounds="9.265, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b896194-f1ee-41bf-a758-6eeda64d68a1" absoluteBounds="6.5, 2.625, 2, 3.5016097005208322">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="270a9eb8-fadc-46fa-bf9d-013b4ddc4edd" absoluteBounds="6.515, 3.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1168ea36-814a-4172-af04-f78dc0367010" absoluteBounds="6.5, 16, 2, 2.7324039713541683">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ae89478-a46e-420b-9f96-55a01ca627f3" absoluteBounds="6.515, 16.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fab9f304-9006-46c8-a64a-fb14748ae0cb" absoluteBounds="6.75, 7.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cf4beb7c-a283-47f8-8515-b9bcc761a40c" absoluteBounds="6.765, 7.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2f396fe-f4ab-482f-b96a-7551f415ffe0" absoluteBounds="3.75, 6.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Shipper" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0053838c-0efb-44d5-a1a3-920cba14b6f1" absoluteBounds="3.765, 6.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b0a13fe-b904-4952-8a75-380b33badc8a" absoluteBounds="3.75, 17, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/NortwindL2SDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f59fc61-1a05-4637-bf5f-5a279b2c18d9" absoluteBounds="3.765, 17.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.34699625651042); (4.5 : 1.34699625651042); (4.5 : 3.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/CustomerDemographic/CustomerDemographic_CustomerCustomerDemo" />
+      <nodes>
+        <classShapeMoniker Id="d3bc732e-1de4-44f1-8606-93da152f35e6" />
+        <classShapeMoniker Id="be5ef110-04b2-4ebe-a685-a7ffdf66dd40" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.34699625651042); (3.5 : 4.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Customer/Customer_CustomerCustomerDemo" />
+      <nodes>
+        <classShapeMoniker Id="360fb056-4c87-451c-aeac-230d47bc8f34" />
+        <classShapeMoniker Id="be5ef110-04b2-4ebe-a685-a7ffdf66dd40" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.45923076923077 : 12.8958154296875); (4.45923076923077 : 13.1458154296875); (5.05461538461539 : 13.1458154296875); (5.05461538461539 : 12.8958154296875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Employee/Employee_Employee" />
+      <nodes>
+        <classShapeMoniker Id="3801098a-63f6-41cc-9cae-3f94242a3924" />
+        <classShapeMoniker Id="3801098a-63f6-41cc-9cae-3f94242a3924" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 10.0969962565104); (6.51041666666667 : 10.0969962565104 : JumpStart); (6.67708333333333 : 10.0969962565104 : JumpEnd); (9.26041666666667 : 10.0969962565104 : JumpStart); (9.42708333333333 : 10.0969962565104 : JumpEnd); (12.25 : 10.0969962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Employee/Employee_EmployeeTerritory" />
+      <nodes>
+        <classShapeMoniker Id="3801098a-63f6-41cc-9cae-3f94242a3924" />
+        <classShapeMoniker Id="9473faf5-031c-4100-b143-b2a0ec47962c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.5 : 8.06814697265625); (13.25 : 8.06814697265625); (13.25 : 9.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Territory/Territory_EmployeeTerritory" />
+      <nodes>
+        <classShapeMoniker Id="80d7e859-46c8-40b4-a8cc-0aafd29eec96" />
+        <classShapeMoniker Id="9473faf5-031c-4100-b143-b2a0ec47962c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 4.38544840494792); (9.25 : 4.38544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Order/Order_Order_Detail" />
+      <nodes>
+        <classShapeMoniker Id="4b896194-f1ee-41bf-a758-6eeda64d68a1" />
+        <classShapeMoniker Id="a7d3d36e-8efa-47aa-a745-3d4186b2aabd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.28125); (4.41666666666667 : 3.28125 : JumpStart); (4.58333333333333 : 3.28125 : JumpEnd); (6.5 : 3.28125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Customer/Customer_Order" />
+      <nodes>
+        <classShapeMoniker Id="360fb056-4c87-451c-aeac-230d47bc8f34" />
+        <classShapeMoniker Id="4b896194-f1ee-41bf-a758-6eeda64d68a1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 11.527658343099); (6.59375 : 11.527658343099); (6.59375 : 6.12660970052083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Employee/Employee_Order" />
+      <nodes>
+        <classShapeMoniker Id="3801098a-63f6-41cc-9cae-3f94242a3924" />
+        <classShapeMoniker Id="4b896194-f1ee-41bf-a758-6eeda64d68a1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 17.3662019856771); (9.34375 : 17.3662019856771); (9.34375 : 5.27089680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Product/Product_Order_Detail" />
+      <nodes>
+        <classShapeMoniker Id="1168ea36-814a-4172-af04-f78dc0367010" />
+        <classShapeMoniker Id="a7d3d36e-8efa-47aa-a745-3d4186b2aabd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 15.3124995); (7.5 : 15.3124995); (7.5 : 16)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Category/Category_Product" />
+      <nodes>
+        <classShapeMoniker Id="965409c1-da9d-4b66-b167-1d9e4deedf7d" />
+        <classShapeMoniker Id="1168ea36-814a-4172-af04-f78dc0367010" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 8.09699625651042); (9.26041666666667 : 8.09699625651042 : JumpStart); (9.42708333333333 : 8.09699625651042 : JumpEnd); (9.5 : 8.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Region/Region_Territory" />
+      <nodes>
+        <classShapeMoniker Id="fab9f304-9006-46c8-a64a-fb14748ae0cb" />
+        <classShapeMoniker Id="80d7e859-46c8-40b4-a8cc-0aafd29eec96" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 6.96875); (6.5624975 : 6.96875); (6.5624975 : 6.12660970052083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Shipper/Shipper_Order" />
+      <nodes>
+        <classShapeMoniker Id="d2f396fe-f4ab-482f-b96a-7551f415ffe0" />
+        <classShapeMoniker Id="4b896194-f1ee-41bf-a758-6eeda64d68a1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 17.8662019856771); (6.5 : 17.8662019856771)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NortwindL2SDataContext/Supplier/Supplier_Product" />
+      <nodes>
+        <classShapeMoniker Id="7b0a13fe-b904-4952-8a75-380b33badc8a" />
+        <classShapeMoniker Id="1168ea36-814a-4172-af04-f78dc0367010" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

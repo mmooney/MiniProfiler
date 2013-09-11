@@ -316,7 +316,16 @@
             return result;
         }
 
-        /// <summary>
+		/// <summary>
+		/// Returns the <c>css</c> and <c>javascript</c> includes needed to display the MiniProfiler results UI.
+		/// </summary>
+		/// <returns>Script and link elements normally; an empty string when there is no active profiling session.</returns>
+		public static IHtmlString RenderIncludes()
+		{
+			return UI.MiniProfilerHandler.RenderIncludes(Current, null, null, null, null, null, null);
+		}
+		
+		/// <summary>
         /// Returns the <c>css</c> and <c>javascript</c> includes needed to display the MiniProfiler results UI.
         /// </summary>
         /// <param name="position">Which side of the page the profiler popup button should be displayed on (defaults to left)</param>
