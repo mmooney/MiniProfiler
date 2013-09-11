@@ -62,6 +62,17 @@
         {
             return profiler == null ? null : profiler.StepImpl(name, level);
         }
+        
+        /// <summary>
+        /// Returns an <see cref="IDisposable"/> that will time the code between its creation and disposal. Default to ProfileLevel.Info.
+        /// </summary>
+        /// <param name="profiler">The current profiling session or null.</param>
+        /// <param name="name">A descriptive name for the code that is encapsulated by the resulting IDisposable's lifetime.</param>
+        /// <returns>the profile step</returns>
+        public static IDisposable Step(this MiniProfiler profiler, string name)
+        {
+            return profiler == null ? null : profiler.StepImpl(name, ProfileLevel.Info);
+        }
 
         /// <summary>
         /// Returns an <see cref="IDisposable"/> that will ignore profiling between its creation and disposal.
