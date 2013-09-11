@@ -71,7 +71,7 @@
         /// <returns>the profile step</returns>
         public static IDisposable Step(this MiniProfiler profiler, string name)
         {
-            return profiler == null ? null : profiler.StepImpl(name, ProfileLevel.Info);
+            return profiler.Step(name, ProfileLevel.Info);
         }
 
         /// <summary>
